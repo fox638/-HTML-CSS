@@ -1,0 +1,66 @@
+header.header
+    .header_top.clearfix
+        .header_logo
+            a(href='/').header_logo-link
+                img(src='http://vipparfumer.msk.ru/image/catalog/logo_vipparfumer_rf.png').header_logo-img
+                span.header_logo-text духи и косметика
+        .header_address
+            .header_address_top
+                .header_address_top-left
+                    a(href='tel:+7 495 294 34 45').header_address_phone +7 495 294 34 45
+                    a(href='tel:+7 916 838 00 01').header_address_phone +7 916 838 00 01
+                .header_address_top-right
+                    a.btn.btn_orange.imcallask-click(href='#') обратный звонок
+                    ul.top_social-list
+                        li.top_social-item
+                            a.top_social-link.top_social-link_wapp(href='#') vk
+                        li.top_social-item
+                            a.top_social-link.top_social-link_tel(href='#') telegram
+                        li.top_social-item
+                            a.top_social-link.top_social-link_vib(href='#') viber
+        .header_address.vk-header
+            a(href='http://vk.com')
+                img(src='http://vipparfumer.msk.ru/catalog/view/theme/GoldenCasket/image/icons/vk_logo.png')
+        .header_busket_wrap
+            .btn-group.btn-block.header_busket#cart
+                button(type='button' data-toggle='dropdown' class="btn cart-dropdown")
+                    span#cart-total Товаров в конзине <br> на сумму (0 рублей)
+                span.empty корзина пусты <br> добавить товар
+                style.
+                    #cart-total {
+                        display:none;
+                    }
+
+                ul.dropdown-menu.pull-right
+            a(href='#')
+                #cart-mini.hide_header-busket
+                    span 0
+    .main_nav-wrap.clearfix
+        nav.main_nav.live-menu
+            .sandwich_menu-wrap.clearfix
+                .sandwich_menu
+                    span.sandwich_menu-top
+                    span.sandwich_menu-middle
+                    span.sandwich_menu-bottom
+
+                span.sandwich_menu-title Меню
+            ul.nav.navbar-nav.main_nav_list
+                li.main_nav_item
+                    a(href='#').main_nav_link О компании
+                li.main_nav_item
+                    a(href='#').main_nav_link Акции
+                li.main_nav_item
+                    a(href='#').main_nav_link Новости
+                li.main_nav_item
+                    a(href='#').main_nav_link Доставка
+                li.main_nav_item
+                    a(href='#').main_nav_link Производители
+                li.main_nav_item
+                    a(href='#').main_nav_link Контакты
+
+
+        .top_search-wrap
+             #search.input-group
+                 input(type='text' name='search' placeholder='поиск по товарам' class='form-control input-lg')
+                 button(type='button' class='btn search btn-default btn-lg')
+

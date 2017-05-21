@@ -1,0 +1,19 @@
+include ../vars/_global_vars
+include ../vars/_global_mixins
+include ../vars/_project_mixins
+include ../vars/_project_vars
+
+- var array = '';
+block vars
+doctype
+html(lang="ru")
+    head
+        +head(array)
+    body(class=`${array.layout_mod}`)
+        +header
+        .wrapper(class=`${array.layuot_mod}`)
+            .base(class=`${array.layuot_mod}`)
+                block content_block
+            +footer
+        +scripts
+        block local_popup
